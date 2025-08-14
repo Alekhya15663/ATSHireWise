@@ -1,0 +1,117 @@
+html,body {
+  margin: 0;
+  height:100%;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg,#e0f2fe,#dbeafe);
+  color: #1f2937;
+  overflow-x:hidden;
+  overflow-y:auto;
+  box-sizing:border-box;
+}
+.app-container{
+  grid-template-rows:auto 1fr auto;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  background:#4f46e5;
+  box-shadow: 0 1px 4px rgba(0, 0,0,0.08);
+  position: sticky;
+  top: 0;
+  
+}
+
+.brand {
+  font-size: 1.0rem;
+  font-weight: 600;
+  letter-spacing:0.5px;
+  color:white;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  margin-left: 1rem;
+  color: #e0e7ff; 
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-header nav a.primary {
+  padding: .4rem .8rem;
+  background: #7591d3;
+  color:white;
+  border-radius: 6px;
+  
+}
+
+
+.site-main {
+  justify-content:center;
+  padding: 2rem,1rem;
+  align-items:flex-start;
+  overflow:visible;
+  display: flex; 
+  flex:1;
+}
+
+
+.site-footer {
+  text-align: center;
+  font-size: .9rem;
+  padding: 1rem;
+  background-color: linear-gradient(90deg,#2e3a59,#3b4a6b);
+  box-shadow:0, -2px 5px rgba(0,0,0,0.1);
+  color: black;
+  border-top: 1px solid #ddd;
+  height:60px;
+  box-sizing:border-box;
+  flex-shrink:0;
+  width:100%;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.2rem;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}

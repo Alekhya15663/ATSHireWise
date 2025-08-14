@@ -1,0 +1,143 @@
+
+body{
+  margin:0;
+  padding:0;
+}
+header{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.landing {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 40px 0;
+  overflow:hidden;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 0;
+}
+
+
+.landing-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.landing-left {
+  max-width: 700px;
+  
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
+.landing-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgb(117, 200, 245); 
+}
+
+.landing-left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.feature-list {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.about-project,
+.testimonials {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid white;
+}
+
+.about-project h2,
+.testimonials h2 {
+  font-size: 1.5rem;
+  color: #f9f9cd;
+  margin-bottom: 0.5rem;
+}
+
+.about-project p,
+.testimonials p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.get-started-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #051d34;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+@media (max-width: 900px) {
+  .landing-inner {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .landing-left, .landing-right {
+    padding: 0;
+  }
+
+  .landing-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-left p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+}

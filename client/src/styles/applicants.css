@@ -1,0 +1,29 @@
+.applicants-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.applicants-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+.applicants-wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.applicants-wrapper li {
+  background: #f8fafc;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+}
